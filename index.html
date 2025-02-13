@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SalesInsights - Advanced Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Update the sidebar navigation structure -->
+<div class="sidebar">
+    <div class="logo">
+        <i class="fas fa-chart-line"></i>
+        <h2>SalesInsights</h2>
+    </div>
+    
+    <nav class="side-nav">
+        <div class="nav-group">
+            <h3>Main Menu</h3>
+            <a href="#" class="nav-item active">
+                <i class="fas fa-th-large"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="./analytics.html" class="nav-item">
+                <i class="fas fa-chart-bar"></i>
+                <span>Analytics</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Sales</span>
+            </a>
+        </div>
+
+        <div class="nav-group">
+            <h3>Management</h3>
+            <a href="#" class="nav-item">
+                <i class="fas fa-users"></i>
+                <span>Customers</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-box"></i>
+                <span>Products</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </a>
+        </div>
+    </nav>
+</div>
+    
+    <main>
+        <div class="top-bar">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="user-section">
+                <div class="notification-group">
+                    <button class="notification-btn">
+                        <i class="far fa-bell"></i>
+                        <span class="notification-dot"></span>
+                    </button>
+                    <button class="notification-btn">
+                        <i class="far fa-envelope"></i>
+                        <span class="notification-dot"></span>
+                    </button>
+                </div>
+                <div class="user-profile">
+                    <span class="user-name">Erin Korsgaard</span>
+                    <span class="user-role">Sales Manager</span>
+                    <div class="avatar">EK</div>
+                </div>
+            </div>
+        </div>
+
+        <header class="dashboard-header">
+            <div class="greeting-section">
+                <h1 id="greeting">Good Evening, Erin K</h1>
+                <p>Let's boost your sales with powerful insights and effective sales performance dashboard</p>
+            </div>
+            <div class="action-buttons">
+                <button class="btn customize">
+                    <i class="fas fa-sliders-h"></i>
+                    Customize
+                </button>
+                <button class="btn export">
+                    <i class="fas fa-file-export"></i>
+                    Export
+                </button>
+            </div>
+        </header>
+
+        <!-- Quick Stats Section -->
+        <div class="quick-stats">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+                <div class="stat-info">
+                    <h4>Total Orders</h4>
+                    <h3>1,485</h3>
+                    <span class="trend positive">+12.5%</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="stat-info">
+                    <h4>New Customers</h4>
+                    <h3>385</h3>
+                    <span class="trend positive">+8.2%</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="stat-info">
+                    <h4>Revenue</h4>
+                    <h3>$57,892</h3>
+                    <span class="trend positive">+15.3%</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-chart-pie"></i>
+                </div>
+                <div class="stat-info">
+                    <h4>Growth</h4>
+                    <h3>24.8%</h3>
+                    <span class="trend positive">+4.2%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Dashboard Grid -->
+        <div class="dashboard-grid">
+            <!-- Previous cards remain the same -->
+            <!-- Add new sections below -->
+        </div>
+
+        <!-- Recent Activities Section -->
+        <div class="recent-activities">
+            <h3>Recent Activities</h3>
+            <div class="activity-list">
+                <div class="activity-item">
+                    <div class="activity-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="activity-details">
+                        <h4>New Order #12345</h4>
+                        <p>John Doe placed a new order worth $1,234</p>
+                        <span class="activity-time">2 hours ago</span>
+                    </div>
+                </div>
+                <!-- More activity items -->
+            </div>
+        </div>
+
+        <!-- Top Products Section -->
+        <div class="top-products">
+            <h3>Top Products</h3>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="./a.png" alt="Product">
+                    <div class="product-details">
+                        <h4>Product Name</h4>
+                        <p>$299.99</p>
+                    </div>
+                    <div class="product-stats">
+                        <span class="sales">234 sales</span>
+                        <span class="rating">4.8 ⭐</span>
+                    </div>
+                </div>
+                <!-- More product items -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <a href="#" class="active">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="#">
+            <i class="fas fa-chart-bar"></i>
+            <span>Analytics</span>
+        </a>
+        <a href="#">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Sales</span>
+        </a>
+        <a href="#">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+        </a>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
